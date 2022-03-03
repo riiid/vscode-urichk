@@ -1,0 +1,36 @@
+{
+  "name": "vscode-urichk",
+  "description": "Urichk extension for VSCode",
+  "version": "0.0.1",
+  "main": "./dist/main",
+  "license": "(MIT OR Apache-2.0)",
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "activationEvents": [
+    "onLanguage:urichk"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "urichk",
+        "extensions": [
+          ".urichk"
+        ],
+        "aliases": [
+          "Urichk"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "esbuild ./src/extension.ts --bundle --outfile=dist/main.js --external:vscode --format=cjs --platform=node"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/vscode": "^1.64.0",
+    "esbuild": "^0.14.23",
+    "typescript": "^4.6.2"
+  }
+}
