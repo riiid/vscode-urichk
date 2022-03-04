@@ -1,13 +1,17 @@
 import * as vscode from "vscode";
 import { EXTENSION_NS } from "./constants";
+import { parse } from 'urichk';
+import format from 'urichk/stringifier/formatter.js';
 
 // const extensionContext = {} as PbkitExtensionContext;
 
 const URICHK_MOD: vscode.DocumentSelector = {scheme: 'file', language: 'urichk'}
 
 class UrichkDocumentFormatter implements vscode.DocumentFormattingEditProvider {
-  public provideDocumentFormattingEdits(document: vscode.TextDocument): Thenable<vscode.TextEdit[]> {
-    throw new Error("Implement here!");
+  public provideDocumentFormattingEdits(document: vscode.TextDocument, options: vscode.FormattingOptions, token: vscode.CancellationToken): vscode.ProviderResult<vscode.TextEdit[]> {
+    const urichk = parse(document.getText());
+    if(!urichk) return null;
+    return [new vscode.TextEdit(new vscode.Range(0, 0, document.lineCount, 0), format(urichk))];
   }
 }
 
