@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "main": "./dist/main",
   "license": "(MIT OR Apache-2.0)",
+  "publisher": "riiid",
   "engines": {
     "vscode": "^1.51.0"
   },
@@ -29,7 +30,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
-    "@types/vscode": "^1.64.0",
+    "@types/vscode": "^1.51.0",
     "@yarnpkg/esbuild-plugin-pnp": "^2.0.1",
     "esbuild": "^0.14.23",
     "typescript": "next"
