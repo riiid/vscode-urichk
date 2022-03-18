@@ -433,10 +433,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"urichk@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "urichk@npm:0.0.5"
-  checksum: ad54603a22d1fbb2d7eb8cdd54727493f6b7584b30a8366430b23d3e230b157d8ceb46005ba8e34e926a19559f758398989a42dbfbcd8724ecd66f186bc23ecc
+"urichk@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "urichk@npm:0.0.9"
+  checksum: 1cd897201d457327d42fef745f325f037bebdadc1f3e4bf1fe6e69cf3aa6cdba1b2b236ada50f46a753fb0f974478a777a61c4641182c930c8c59a1e827cd671
   languageName: node
   linkType: hard
 
@@ -450,7 +450,7 @@ __metadata:
     esbuild: ^0.14.23
     sucrase: ^3.20.3
     typescript: ^4.6.2
-    urichk: ^0.0.5
+    urichk: ^0.0.9
   languageName: unknown
   linkType: soft
 

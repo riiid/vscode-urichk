@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esbuild", "npm:0.14.23"],\
             ["sucrase", "npm:3.20.3"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"],\
-            ["urichk", "npm:0.0.5"]\
+            ["urichk", "npm:0.0.9"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -506,10 +506,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["urichk", [\
-        ["npm:0.0.5", {\
-          "packageLocation": "./.yarn/cache/urichk-npm-0.0.5-6df1aaf267-ad54603a22.zip/node_modules/urichk/",\
+        ["npm:0.0.9", {\
+          "packageLocation": "./.yarn/cache/urichk-npm-0.0.9-fb319d7186-1cd897201d.zip/node_modules/urichk/",\
           "packageDependencies": [\
-            ["urichk", "npm:0.0.5"]\
+            ["urichk", "npm:0.0.9"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -525,7 +525,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esbuild", "npm:0.14.23"],\
             ["sucrase", "npm:3.20.3"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"],\
-            ["urichk", "npm:0.0.5"]\
+            ["urichk", "npm:0.0.9"]\
           ],\
           "linkType": "SOFT"\
         }]\
