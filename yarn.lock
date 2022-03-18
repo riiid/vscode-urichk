@@ -413,23 +413,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.2":
-  version: 4.6.2
-  resolution: "typescript@npm:4.6.2"
+"typescript@npm:next":
+  version: 4.7.0-dev.20220318
+  resolution: "typescript@npm:4.7.0-dev.20220318"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 8a44ed7e6f6c4cb1ebe8cf236ecda2fb119d84dcf0fbd77e707b2dfea1bbcfc4e366493a143513ce7f57203c75da9d4e20af6fe46de89749366351046be7577c
+  checksum: bbaa890258b7403b5356a9d010be010bd0113967f3f3dcc04635ce1fcb709d4509edb96df00de0116d564c214cc58f931863614733fe78a9e618d8b36bc269c7
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.2#~builtin<compat/typescript>":
-  version: 4.6.2
-  resolution: "typescript@patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"
+"typescript@patch:typescript@next#~builtin<compat/typescript>":
+  version: 4.7.0-dev.20220318
+  resolution: "typescript@patch:typescript@npm%3A4.7.0-dev.20220318#~builtin<compat/typescript>::version=4.7.0-dev.20220318&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 40b493a71747fb89fa70df104e2c4a5e284b43750af5bea024090a5261cefa387f7a9372411b13030f7bf5555cee4275443d08805642ae5c74ef76740854a4c7
+  checksum: c57efd9fed14c7f33673c2bfb4c0112f9077b0d2b1ecd392dccd0f0b59c2be9a54d7f614d9406da63b9b75660efbb669aa137fce3fd5c6e50c586e6b289c321a
   languageName: node
   linkType: hard
 
@@ -449,7 +449,7 @@ __metadata:
     "@yarnpkg/esbuild-plugin-pnp": ^2.0.1
     esbuild: ^0.14.23
     sucrase: ^3.20.3
-    typescript: ^4.6.2
+    typescript: next
     urichk: ^0.0.9
   languageName: unknown
   linkType: soft
