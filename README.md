@@ -5,5 +5,5 @@ This extension adds support for using [Urichk](https://github.com/riiid/urichk) 
 > ⚠️ This extension is still in development.
 
 ## Features
-- Syntax highlighting (TODO)
-- Formatting (TODO)
+- Syntax highlighting
+- Formatting
