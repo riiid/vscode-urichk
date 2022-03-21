@@ -1,0 +1,124 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Urichk",
+  "patterns": [
+    {
+      "include": "#rule"
+    },
+    {
+      "include": "#comment"
+    }
+  ],
+  "repository": {
+    "rule": {
+      "name": "meta.rule.urichk",
+      "begin": "([\\w\\d:#@%/;$()~_?\\+,\\-=\\\\.&\\[\\]]+)\\s*({)",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.urichk"
+        },
+        "2": {
+          "name": "puncutation.definition.rule.begin.urichk"
+        }
+      },
+      "end": "}",
+      "endCaptures": {
+        "0": {
+          "name": "puncutation.definition.rule.end.urichk"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#tail"
+        },
+        {
+          "include": "#comment"
+        }
+      ]
+    },
+    "tail": {
+      "name": "meta.tail.urichk",
+      "begin": "\\b(?#)\\s*(form|match)\\s*({)",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.type.urichk"
+        },
+        "2": {
+          "name": "entity.name.tag.urichk"
+        },
+        "3": {
+          "name": "puncutation.definition.tail.begin.urichk"
+        }
+      },
+      "end": "}",
+      "endCaptures": {
+        "0": {
+          "name": "puncutation.definition.tail.end.urichk"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#pattern-rule"
+        },
+        {
+          "include": "#comment"
+        }
+      ]
+    },
+    "pattern-rule": {
+      "name": "statement.pattern-rule.urichk",
+      "begin": "('.*?'|(?:[a-zA-Z0-9\\-._~]|%[0-9a-fA-F]{2})+)\\s*(=)?",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.tag.urichk"
+        },
+        "2": {
+          "name": "puncutation.definition.pattern-rule.begin.urichk"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#comment"
+        },
+        {
+          "include": "#values"
+        }
+      ],
+      "end": "(?=}|('.*?'|(?:[a-zA-Z0-9\\-._~]|%[0-9a-fA-F]{2})+)\\s*(=)?)"
+    },
+    "values": {
+      "name": "meta.values.urichk",
+      "match": "|\\?\\s*(\\/(?:(?![*+?])(?:[^\\r\\n\\[/\\\\]|\\\\.|\\[(?:[^\\r\\n\\]\\\\]|\\\\.)*\\])+)\\/[a-z]*|(?:[a-zA-Z0-9\\-._~]|%[0-9a-fA-F]{2})+|'.*?')"
+    },
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.block.documentation.urichk",
+          "begin": "/\\*\\*(?!/)",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.urichk"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.urichk"
+            }
+          }
+        },
+        {
+          "name": "comment.block.urichk",
+          "begin": "/\\*",
+          "end": "\\*/"
+        },
+        {
+          "name": "comment.line.double-slash.urichk",
+          "begin": "//",
+          "end": "(?:\\n|$)"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.urichk"
+}

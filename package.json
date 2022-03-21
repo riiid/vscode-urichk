@@ -34,6 +34,13 @@
         ],
         "configuration": "./language-configuration.json"
       }
+    ],
+    "grammars": [
+      {
+        "language": "urichk",
+        "scopeName": "source.urichk",
+        "path": "./syntaxes/urichk.tmLanguage.json"
+      }
     ]
   },
   "scripts": {
