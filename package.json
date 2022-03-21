@@ -1,5 +1,6 @@
 {
   "name": "vscode-urichk",
+  "displayName": "Urichk",
   "description": "Urichk extension for VSCode",
   "version": "0.1.0",
   "main": "./dist/main.js",
@@ -14,6 +15,12 @@
   },
   "activationEvents": [
     "onLanguage:urichk"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Formatters",
+    "Linters",
+    "Other"
   ],
   "contributes": {
     "languages": [
