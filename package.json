@@ -1,7 +1,7 @@
 {
   "name": "vscode-urichk",
   "description": "Urichk extension for VSCode",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "./dist/main.js",
   "repository": {
     "type": "git",
