@@ -2,7 +2,11 @@
   "name": "vscode-urichk",
   "description": "Urichk extension for VSCode",
   "version": "0.0.1",
-  "main": "./dist/main",
+  "main": "./dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riiid/vscode-urichk.git"
+  },
   "license": "(MIT OR Apache-2.0)",
   "publisher": "riiid",
   "engines": {
@@ -31,13 +35,11 @@
   "devDependencies": {
     "@types/node": "^17.0.21",
     "@types/vscode": "^1.51.0",
-    "@yarnpkg/esbuild-plugin-pnp": "^2.0.1",
     "esbuild": "^0.14.23",
     "typescript": "next"
   },
   "dependencies": {
     "sucrase": "^3.20.3",
     "urichk": "^0.0.9"
-  },
-  "packageManager": "yarn@3.2.0"
+  }
 }
